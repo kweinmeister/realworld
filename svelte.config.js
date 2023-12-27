@@ -1,7 +1,7 @@
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-node';
 
 export default {
 	kit: {
-		adapter: adapter({ runtime: 'edge' })
+		adapter: adapter()
 	}
 };

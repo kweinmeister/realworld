@@ -9,16 +9,19 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"lint": "prettier --check .",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"start": "npm i -g vite && pnpm i && vite build && node build"
 	},
-	"devDependencies": {
-		"@sveltejs/adapter-vercel": "^4.0.3",
+	"dependencies": {
+		"@sveltejs/adapter-node": "^2.0.2",
 		"@sveltejs/kit": "^2.0.6",
-		"@sveltejs/vite-plugin-svelte": "^3.0.1",
 		"marked": "^11.1.0",
+		"svelte": "^4.2.8"
+	},
+	"devDependencies": {		
+		"@sveltejs/vite-plugin-svelte": "^3.0.1",
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
-		"svelte": "^4.2.8",
 		"typescript": "^5.3.3",
 		"vite": "^5.0.10"
 	}
